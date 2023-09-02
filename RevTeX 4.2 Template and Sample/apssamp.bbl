@@ -1,0 +1,443 @@
+%apsrev4-2.bst 2019-01-14 (MD) hand-edited version of apsrev4-1.bst
+%Control: key (0)
+%Control: author (8) initials jnrlst
+%Control: editor formatted (1) identically to author
+%Control: production of article title (0) allowed
+%Control: page (0) single
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\begin{thebibliography}{36}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
+  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{https://doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {Gross}\ and\ \citenamefont
+  {Wilczek}(1973)}]{PhysRevLett.30.1343}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~J.}\ \bibnamefont
+  {Gross}}\ and\ \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Wilczek}},\ }\bibfield  {title} {\bibinfo {title} {Ultraviolet behavior of
+  non-abelian gauge theories},\ }\href
+  {https://doi.org/10.1103/PhysRevLett.30.1343} {\bibfield  {journal} {\bibinfo
+   {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {30}},\ \bibinfo
+  {pages} {1343} (\bibinfo {year} {1973})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Politzer}(1973)}]{PhysRevLett.30.1346}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.~D.}\ \bibnamefont
+  {Politzer}},\ }\bibfield  {title} {\bibinfo {title} {Reliable perturbative
+  results for strong interactions?},\ }\href
+  {https://doi.org/10.1103/PhysRevLett.30.1346} {\bibfield  {journal} {\bibinfo
+   {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {30}},\ \bibinfo
+  {pages} {1346} (\bibinfo {year} {1973})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {G.~Arnison}\ \emph {et~al.}(1983)\citenamefont
+  {G.~Arnison}, \citenamefont {Aubert} \emph {et~al.}}]{ARNISON1983103}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~A.}\ \bibnamefont
+  {G.~Arnison}}, \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {Aubert}},
+  \emph {et~al.},\ }\bibfield  {title} {\bibinfo {title} {Experimental
+  observation of isolated large transverse energy electrons with associated
+  missing energy at $\sqrt{s}=540\text{ GeV}$},\ }\href
+  {https://doi.org/https://doi.org/10.1016/0370-2693(83)91177-2} {\bibfield
+  {journal} {\bibinfo  {journal} {Physics Letters B}\ }\textbf {\bibinfo
+  {volume} {122}},\ \bibinfo {pages} {103} (\bibinfo {year}
+  {1983})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Baak}\ \emph {et~al.}(2014)\citenamefont {Baak},
+  \citenamefont {C\'uth}, \citenamefont {Haller} \emph
+  {et~al.}}]{Baak:2014ora}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Baak}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {C\'uth}},
+  \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Haller}}, \emph {et~al.}
+  (\bibinfo {collaboration} {Gfitter Group}),\ }\bibfield  {title} {\bibinfo
+  {title} {{The global electroweak fit at NNLO and prospects for the LHC and
+  ILC}},\ }\href {https://doi.org/10.1140/epjc/s10052-014-3046-5} {\bibfield
+  {journal} {\bibinfo  {journal} {Eur. Phys. J. C}\ }\textbf {\bibinfo {volume}
+  {74}},\ \bibinfo {pages} {3046} (\bibinfo {year} {2014})},\ \Eprint
+  {https://arxiv.org/abs/1407.3792} {arXiv:1407.3792 [hep-ph]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Olive}\ \emph {et~al.}(2014)\citenamefont {Olive}
+  \emph {et~al.}}]{ParticleDataGroup:2014cgo}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.~A.}\ \bibnamefont
+  {Olive}} \emph {et~al.} (\bibinfo {collaboration} {Particle Data Group}),\
+  }\bibfield  {title} {\bibinfo {title} {{Review of Particle Physics}},\ }\href
+  {https://doi.org/10.1088/1674-1137/38/9/090001} {\bibfield  {journal}
+  {\bibinfo  {journal} {Chin. Phys. C}\ }\textbf {\bibinfo {volume} {38}},\
+  \bibinfo {pages} {090001} (\bibinfo {year} {2014})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Stuart}(1999)}]{stuart1999improved}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~G.}\ \bibnamefont
+  {Stuart}},\ }\href@noop {} {\bibinfo {title} {{An Improved Determination of
+  the Fermi Coupling Constant, $\uppercase{G}_{F}$}}} (\bibinfo {year}
+  {1999}),\ \Eprint {https://arxiv.org/abs/hep-ph/9902257}
+  {arXiv:hep-ph/9902257 [hep-ph]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Monni}\ \emph
+  {et~al.}(2020{\natexlab{a}})\citenamefont {Monni}, \citenamefont {Nason},
+  \citenamefont {Re}, \citenamefont {Wiesemann},\ and\ \citenamefont
+  {Zanderighi}}]{Monni_may2022}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~F.}\ \bibnamefont
+  {Monni}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Nason}},
+  \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Re}}, \bibinfo {author}
+  {\bibfnamefont {M.}~\bibnamefont {Wiesemann}},\ and\ \bibinfo {author}
+  {\bibfnamefont {G.}~\bibnamefont {Zanderighi}},\ }\bibfield  {title}
+  {\bibinfo {title} {{MiNNLO}$_\text{{PS}}$: a new method to match {NNLO} {QCD}
+  to parton showers},\ }\bibfield  {journal} {\bibinfo  {journal} {Journal of
+  High Energy Physics}\ }\textbf {\bibinfo {volume} {2020}},\ \href
+  {https://doi.org/10.1007/jhep05(2020)143} {10.1007/jhep05(2020)143} (\bibinfo
+  {year} {2020}{\natexlab{a}})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Monni}\ \emph
+  {et~al.}(2020{\natexlab{b}})\citenamefont {Monni}, \citenamefont {Re},\ and\
+  \citenamefont {Wiesemann}}]{Monni_nov2020}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~F.}\ \bibnamefont
+  {Monni}}, \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Re}},\ and\
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Wiesemann}},\ }\bibfield
+  {title} {\bibinfo {title} {{MiNNLO}$_\text{{PS}}$: Optimizing $2\to 1$
+  hadronic processes},\ }\bibfield  {journal} {\bibinfo  {journal} {The
+  European Physical Journal C}\ }\textbf {\bibinfo {volume} {80}},\ \href
+  {https://doi.org/10.1140/epjc/s10052-020-08658-5}
+  {10.1140/epjc/s10052-020-08658-5} (\bibinfo {year}
+  {2020}{\natexlab{b}})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Feltesse}(2012)}]{Feltesse:2012yaa}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Feltesse}},\ }\bibfield  {title} {\bibinfo {title} {{Introduction to deep
+  inelastic scattering: Past and present}},\ }in\ \href
+  {https://doi.org/10.3204/DESY-PROC-2012-02/6} {\emph {\bibinfo {booktitle}
+  {{20th International Workshop on Deep-Inelastic Scattering and Related
+  Subjects}}}}\ (\bibinfo {year} {2012})\ pp.\ \bibinfo {pages}
+  {3--12}\BibitemShut {NoStop}%
+\bibitem [{CMS(1994)}]{CMS1994}%
+  \BibitemOpen
+  \href {http://cds.cern.ch/record/290969} {\emph {\bibinfo {title} {{Technical
+  proposal}}}},\ LHC technical proposal\ (\bibinfo  {publisher} {CERN},\
+  \bibinfo {address} {Geneva},\ \bibinfo {year} {1994})\ \bibinfo {note} {cover
+  title : CMS, the Compact Muon Solenoid : technical proposal}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {{The CMS Collaboration}}\ \emph
+  {et~al.}(2008)\citenamefont {{The CMS Collaboration}}, \citenamefont
+  {Chatrchyan}, \citenamefont {Hmayakyan}, \citenamefont {Khachatryan} \emph
+  {et~al.}}]{TheCMSCollaboration_2008}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{The CMS
+  Collaboration}}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Chatrchyan}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Hmayakyan}}, \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {Khachatryan}}, \emph {et~al.},\ }\bibfield  {title} {\bibinfo {title} {{The
+  CMS experiment at the CERN LHC}},\ }\href
+  {https://doi.org/10.1088/1748-0221/3/08/S08004} {\bibfield  {journal}
+  {\bibinfo  {journal} {Journal of Instrumentation}\ }\textbf {\bibinfo
+  {volume} {3}}\bibinfo  {number} { (08)},\ \bibinfo {pages}
+  {S08004}}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Aad}\ \emph {et~al.}(2012)\citenamefont {Aad},
+  \citenamefont {Abajyan}, \citenamefont {Abbott} \emph {et~al.}}]{20121}%
+  \BibitemOpen
+\bibfield  {number} {  }\bibfield  {author} {\bibinfo {author} {\bibfnamefont
+  {G.}~\bibnamefont {Aad}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Abajyan}}, \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {Abbott}},
+  \emph {et~al.},\ }\bibfield  {title} {\bibinfo {title} {{Observation of a new
+  particle in the search for the Standard Model Higgs boson with the ATLAS
+  detector at the LHC}},\ }\href
+  {https://doi.org/https://doi.org/10.1016/j.physletb.2012.08.020} {\bibfield
+  {journal} {\bibinfo  {journal} {Physics Letters B}\ }\textbf {\bibinfo
+  {volume} {716}},\ \bibinfo {pages} {1} (\bibinfo {year} {2012})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Chatrchyan}\ \emph {et~al.}(2012)\citenamefont
+  {Chatrchyan}, \citenamefont {Khachatryan}, \citenamefont {Sirunyan} \emph
+  {et~al.}}]{201230}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Chatrchyan}}, \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {Khachatryan}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Sirunyan}}, \emph {et~al.},\ }\bibfield  {title} {\bibinfo {title}
+  {{Observation of a new boson at a mass of 125 GeV with the CMS experiment at
+  the LHC}},\ }\href
+  {https://doi.org/https://doi.org/10.1016/j.physletb.2012.08.021} {\bibfield
+  {journal} {\bibinfo  {journal} {Physics Letters B}\ }\textbf {\bibinfo
+  {volume} {716}},\ \bibinfo {pages} {30} (\bibinfo {year} {2012})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Kircher}\ \emph {et~al.}(2000)\citenamefont
+  {Kircher}, \citenamefont {Bredy}, \citenamefont {Calvo} \emph
+  {et~al.}}]{Kircher2000}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Kircher}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Bredy}},
+  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Calvo}}, \emph {et~al.},\
+  }\bibfield  {title} {\bibinfo {title} {{Final design of the CMS solenoid cold
+  mass}},\ }\href {https://doi.org/10.1109/77.828259} {\bibfield  {journal}
+  {\bibinfo  {journal} {IEEE Transactions on Applied Superconductivity}\
+  }\textbf {\bibinfo {volume} {10}},\ \bibinfo {pages} {407} (\bibinfo {year}
+  {2000})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Eidelman}\ \emph {et~al.}(2004)\citenamefont
+  {Eidelman}, \citenamefont {Hayes}, \citenamefont {Olive} \emph
+  {et~al.}}]{EIDELMAN20041}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Eidelman}}, \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Hayes}},
+  \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Olive}}, \emph {et~al.},\
+  }\bibfield  {title} {\bibinfo {title} {{Review of Particle Physics}},\ }\href
+  {https://doi.org/https://doi.org/10.1016/j.physletb.2004.06.001} {\bibfield
+  {journal} {\bibinfo  {journal} {Physics Letters B}\ }\textbf {\bibinfo
+  {volume} {592}},\ \bibinfo {pages} {1} (\bibinfo {year} {2004})},\ \bibinfo
+  {note} {{Review of Particle Physics}}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Herve}\ \emph {et~al.}(2004)\citenamefont {Herve},
+  \citenamefont {Blau}, \citenamefont {Bredy} \emph {et~al.}}]{HerveA2004}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Herve}}, \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {Blau}},
+  \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Bredy}}, \emph {et~al.},\
+  }\bibfield  {title} {\bibinfo {title} {{Status of the construction of the CMS
+  magnet}},\ }\href {https://doi.org/10.1109/TASC.2004.829715} {\bibfield
+  {journal} {\bibinfo  {journal} {IEEE Transactions on Applied
+  Superconductivity}\ }\textbf {\bibinfo {volume} {14}},\ \bibinfo {pages}
+  {542} (\bibinfo {year} {2004})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Herve}(2000)}]{HerveA2000}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Herve}},\ }\bibfield  {title} {\bibinfo {title} {{The CMS detector
+  magnet}},\ }\href {https://doi.org/10.1109/77.828255} {\bibfield  {journal}
+  {\bibinfo  {journal} {IEEE Transactions on Applied Superconductivity}\
+  }\textbf {\bibinfo {volume} {10}},\ \bibinfo {pages} {389} (\bibinfo {year}
+  {2000})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Klyukhin}(2021)}]{Klyukhin_2021}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {Klyukhin}},\ }\bibfield  {title} {\bibinfo {title} {{Design and Description
+  of the CMS Magnetic System Model}},\ }\href
+  {https://doi.org/10.3390/sym13061052} {\bibfield  {journal} {\bibinfo
+  {journal} {Symmetry}\ }\textbf {\bibinfo {volume} {13}},\ \bibinfo {pages}
+  {1052} (\bibinfo {year} {2021})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Chatrchyan}\ \emph {et~al.}(2010)\citenamefont
+  {Chatrchyan}, \citenamefont {Khachatryan}, \citenamefont {Sirunyan} \emph
+  {et~al.}}]{Chatrchyan:1215500}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Chatrchyan}}, \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {Khachatryan}}, \bibinfo {author} {\bibfnamefont {A.~M.}\ \bibnamefont
+  {Sirunyan}}, \emph {et~al.} (\bibinfo {collaboration} {CMS}),\ }\bibfield
+  {title} {\bibinfo {title} {{{Precise mapping of the magnetic field in the CMS
+  barrel yoke using cosmic rays}}},\ }\href
+  {https://doi.org/10.1088/1748-0221/5/03/T03021} {\bibfield  {journal}
+  {\bibinfo  {journal} {JINST}\ }\textbf {\bibinfo {volume} {5}},\ \bibinfo
+  {pages} {T03021}},\ \Eprint {https://arxiv.org/abs/0910.5530}
+  {arXiv:0910.5530} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Campbell}\ and\ \citenamefont
+  {Neumann}(2019)}]{Campbell_2019}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Campbell}}\ and\ \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Neumann}},\ }\bibfield  {title} {\bibinfo {title} {Precision phenomenology
+  with {MCFM}},\ }\bibfield  {journal} {\bibinfo  {journal} {Journal of High
+  Energy Physics}\ }\textbf {\bibinfo {volume} {2019}},\ \href
+  {https://doi.org/10.1007/jhep12(2019)034} {10.1007/jhep12(2019)034} (\bibinfo
+  {year} {2019})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Camarda}\ \emph {et~al.}(2020)\citenamefont
+  {Camarda}, \citenamefont {Boonekamp}, \citenamefont {Bozzi} \emph
+  {et~al.}}]{Camarda_2020}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Camarda}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Boonekamp}},
+  \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Bozzi}}, \emph {et~al.},\
+  }\bibfield  {title} {\bibinfo {title} {{DYTurbo: fast predictions for
+  Drell{\textendash}Yan processes}},\ }\bibfield  {journal} {\bibinfo
+  {journal} {The European Physical Journal C}\ }\textbf {\bibinfo {volume}
+  {80}},\ \href {https://doi.org/10.1140/epjc/s10052-020-7757-5}
+  {10.1140/epjc/s10052-020-7757-5} (\bibinfo {year} {2020})\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Campbell}\ \emph {et~al.}(2023)\citenamefont
+  {Campbell}, \citenamefont {Ellis}, \citenamefont {Neumann},\ and\
+  \citenamefont {Seth}}]{Campbell_2023}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont
+  {Campbell}}, \bibinfo {author} {\bibfnamefont {R.~K.}\ \bibnamefont {Ellis}},
+  \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Neumann}},\ and\ \bibinfo
+  {author} {\bibfnamefont {S.}~\bibnamefont {Seth}},\ }\bibfield  {title}
+  {\bibinfo {title} {Jet-veto resummation at {N$^{3}$LLp + NNLO} in boson
+  production processes},\ }\bibfield  {journal} {\bibinfo  {journal} {Journal
+  of High Energy Physics}\ }\textbf {\bibinfo {volume} {2023}},\ \href
+  {https://doi.org/10.1007/jhep04(2023)106} {10.1007/jhep04(2023)106} (\bibinfo
+  {year} {2023})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Buckley}\ \emph {et~al.}(2015)\citenamefont
+  {Buckley}, \citenamefont {Ferrando}, \citenamefont {Lloyd}, \citenamefont
+  {Nordström}, \citenamefont {Page}, \citenamefont {Rüfenacht}, \citenamefont
+  {Schönherr},\ and\ \citenamefont {Watt}}]{Buckley_2015}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Buckley}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Ferrando}},
+  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Lloyd}}, \bibinfo
+  {author} {\bibfnamefont {K.}~\bibnamefont {Nordström}}, \bibinfo {author}
+  {\bibfnamefont {B.}~\bibnamefont {Page}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {Rüfenacht}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {Schönherr}},\ and\ \bibinfo {author} {\bibfnamefont
+  {G.}~\bibnamefont {Watt}},\ }\bibfield  {title} {\bibinfo {title} {{LHAPDF}6:
+  parton density access in the {LHC} precision era},\ }\bibfield  {journal}
+  {\bibinfo  {journal} {The European Physical Journal C}\ }\textbf {\bibinfo
+  {volume} {75}},\ \href {https://doi.org/10.1140/epjc/s10052-015-3318-8}
+  {10.1140/epjc/s10052-015-3318-8} (\bibinfo {year} {2015})\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Layter}(1997)}]{Layter:343814}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~G.}\ \bibnamefont
+  {Layter}} (\bibinfo {collaboration} {CMS}),\ }\href
+  {http://cds.cern.ch/record/343814} {\emph {\bibinfo {title} {{{The CMS muon
+  project: Technical Design Report}}}}},\ Technical design report. CMS\
+  (\bibinfo  {publisher} {CERN},\ \bibinfo {address} {Geneva},\ \bibinfo {year}
+  {1997})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Sjöstrand}\ \emph {et~al.}(2015)\citenamefont
+  {Sjöstrand}, \citenamefont {Ask}, \citenamefont {Christiansen} \emph
+  {et~al.}}]{Sj_strand_2015}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Sjöstrand}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Ask}},
+  \bibinfo {author} {\bibfnamefont {J.~R.}\ \bibnamefont {Christiansen}}, \emph
+  {et~al.},\ }\bibfield  {title} {\bibinfo {title} {An introduction to {PYTHIA}
+  8.2},\ }\href {https://doi.org/10.1016/j.cpc.2015.01.024} {\bibfield
+  {journal} {\bibinfo  {journal} {Computer Physics Communications}\ }\textbf
+  {\bibinfo {volume} {191}},\ \bibinfo {pages} {159} (\bibinfo {year}
+  {2015})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Davidson}\ \emph {et~al.}(2015)\citenamefont
+  {Davidson}, \citenamefont {Przedzinski},\ and\ \citenamefont
+  {Was}}]{davidson2015photos}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Davidson}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Przedzinski}},\ and\ \bibinfo {author} {\bibfnamefont {Z.}~\bibnamefont
+  {Was}},\ }\href@noop {} {\bibinfo {title} {{PHOTOS Interface in C++;
+  Technical and Physics Documentation}}} (\bibinfo {year} {2015}),\ \Eprint
+  {https://arxiv.org/abs/1011.0937} {arXiv:1011.0937 [hep-ph]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Skands}(2012)}]{skands2012qcd}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Skands}},\ }\href@noop {} {\bibinfo {title} {{QCD for Collider Physics}}}
+  (\bibinfo {year} {2012}),\ \Eprint {https://arxiv.org/abs/1104.2863}
+  {arXiv:1104.2863 [hep-ph]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Huss}(2023)}]{alexanderhuss2023}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Huss}},\ }\href
+  {https://github.com/aykhuss/ssl23/blob/main/org/pdf/README.pdf} {\bibinfo
+  {title} {Parton distribution functions}} (\bibinfo {year} {2023})\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Caswell}(1974)}]{PhysRevLett.33.244}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.~E.}\ \bibnamefont
+  {Caswell}},\ }\bibfield  {title} {\bibinfo {title} {{Asymptotic Behavior of
+  Non-Abelian Gauge Theories to Two-Loop Order}},\ }\href
+  {https://doi.org/10.1103/PhysRevLett.33.244} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {33}},\ \bibinfo
+  {pages} {244} (\bibinfo {year} {1974})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Heinemeyer}\ \emph {et~al.}(2021)\citenamefont
+  {Heinemeyer}, \citenamefont {Jadach},\ and\ \citenamefont
+  {Reuter}}]{heinemeyer2021theory}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Heinemeyer}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Jadach}},\
+  and\ \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Reuter}},\
+  }\href@noop {} {\bibinfo {title} {{Theory requirements for SM Higgs and EW
+  precision physics at the FCC-ee}}} (\bibinfo {year} {2021}),\ \Eprint
+  {https://arxiv.org/abs/2106.11802} {arXiv:2106.11802 [hep-ph]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Ebert}\ and\ \citenamefont
+  {et~al.}(2018)}]{ebert2018scetlib}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~A.}\ \bibnamefont
+  {Ebert}}\ and\ \bibinfo {author} {\bibnamefont {et~al.}},\ }\bibfield
+  {title} {\bibinfo {title} {{SCETlib: a C++ package for numerical calculations
+  in QCD and soft-collinear effective theory}},\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {DESY-17-099}\ } (\bibinfo {year}
+  {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Altarelli}\ and\ \citenamefont
+  {Parisi}(1977)}]{ALTARELLI1977298}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Altarelli}}\ and\ \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Parisi}},\ }\bibfield  {title} {\bibinfo {title} {Asymptotic freedom in
+  parton language},\ }\href
+  {https://doi.org/https://doi.org/10.1016/0550-3213(77)90384-4} {\bibfield
+  {journal} {\bibinfo  {journal} {Nuclear Physics B}\ }\textbf {\bibinfo
+  {volume} {126}},\ \bibinfo {pages} {298} (\bibinfo {year}
+  {1977})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ralston}(1986)}]{Ralston:1986hr}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~P.}\ \bibnamefont
+  {Ralston}},\ }\bibfield  {title} {\bibinfo {title} {{POCKET PARTONOMETER}},\
+  }\href {https://doi.org/10.1016/0370-2693(86)90283-2} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Lett. B}\ }\textbf {\bibinfo {volume} {172}},\
+  \bibinfo {pages} {430} (\bibinfo {year} {1986})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Campbell}\ \emph {et~al.}(2016)\citenamefont
+  {Campbell}, \citenamefont {Ellis},\ and\ \citenamefont
+  {Williams}}]{Campbell_2016}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont
+  {Campbell}}, \bibinfo {author} {\bibfnamefont {R.~K.}\ \bibnamefont
+  {Ellis}},\ and\ \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Williams}},\ }\bibfield  {title} {\bibinfo {title} {{Associated production
+  of a Higgs boson at NNLO}},\ }\bibfield  {journal} {\bibinfo  {journal}
+  {Journal of High Energy Physics}\ }\textbf {\bibinfo {volume} {2016}},\ \href
+  {https://doi.org/10.1007/jhep06(2016)179} {10.1007/jhep06(2016)179} (\bibinfo
+  {year} {2016})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Becher}\ and\ \citenamefont
+  {Neubert}(2011)}]{Becher_2011}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Becher}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Neubert}},\ }\bibfield  {title} {\bibinfo {title} {{Drell-Yan production at
+  small $q_T$, transverse parton distributions and the collinear anomaly}},\
+  }\bibfield  {journal} {\bibinfo  {journal} {The European Physical Journal C}\
+  }\textbf {\bibinfo {volume} {71}},\ \href
+  {https://doi.org/10.1140/epjc/s10052-011-1665-7}
+  {10.1140/epjc/s10052-011-1665-7} (\bibinfo {year} {2011})\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Becher}\ and\ \citenamefont
+  {Neumann}(2021)}]{Becher_2021}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Becher}}\ and\ \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Neumann}},\ }\bibfield  {title} {\bibinfo {title} {{Fiducial $q_T$
+  resummation of color-singlet processes at $\mathrm{N}^{3}$LL+NNLO}},\
+  }\bibfield  {journal} {\bibinfo  {journal} {Journal of High Energy Physics}\
+  }\textbf {\bibinfo {volume} {2021}},\ \href
+  {https://doi.org/10.1007/jhep03(2021)199} {10.1007/jhep03(2021)199} (\bibinfo
+  {year} {2021})\BibitemShut {NoStop}%
+\end{thebibliography}%
