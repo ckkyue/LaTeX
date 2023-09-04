@@ -21,5 +21,4 @@ pdflatex -shell-escape -synctex=1 -interaction=nonstopmode %.tex
 ...
 ```
 These syntax options provide flexibility in determining the positions of the figures in a report.
-
-4. Most of the content of "RevTeX 4.2 Template and Sample" folder are from https://www.overleaf.com/latex/templates/revtex-4-dot-2-template-and-sample/yydsrzvrqrzs. The apssamp.tex and apssamp.bib files have been modified.
+4. Most of the content in ``RevTeX 4.2 Template and Sample" folder are from https://www.overleaf.com/latex/templates/revtex-4-dot-2-template-and-sample/yydsrzvrqrzs. The apssamp.tex and apssamp.bib files have been modified.
