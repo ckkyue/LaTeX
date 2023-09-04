@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.1)  3 SEP 2023 01:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.1)  4 SEP 2023 14:03
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -703,19 +703,19 @@ Package chemgreek Info: Activating mapping `default' on line 58.
 Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 58.
 \openout3 = `apssampNotes.bib'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 73.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 70.
 
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 73.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 70.
 
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (./apssamp.bbl
-[1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+) [1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./
+apssamp.bbl
 Underfull \hbox (badness 1259) in paragraph at lines 312--318
  []\OT1/cmr/m/n/9 A. Buck-ley, J. Fer-rando, S. Lloyd, K. Nord-str^^?om,
  []
@@ -726,7 +726,7 @@ Underfull \hbox (badness 2057) in paragraph at lines 312--318
 /9 75\OT1/cmr/m/n/9 ,
  []
 
-
+[2]
 Underfull \hbox (badness 10000) in paragraph at lines 352--355
  []\OT1/cmr/m/n/9 P. Skands, QCD for Col-lider Physics (2012),
  []
@@ -742,18 +742,18 @@ Underfull \hbox (badness 2772) in paragraph at lines 425--433
 Class revtex4-2 Warning: Environment acknowledgements is obsolete;
 Use acknowledgments instead.
 
-[2] (./apssamp.aux)
+[3] (./apssamp.aux)
 Package rerunfilecheck Info: File `apssamp.out' has not changed.
-(rerunfilecheck)             Checksum: 1F13C928AA90A4FDC4655B23006D36D3;1114.
+(rerunfilecheck)             Checksum: 5501F90B69136FC1668E6FBEFDCB2FD6;904.
  ) 
 Here is how much of TeX's memory you used:
- 19062 strings out of 476025
- 310082 string characters out of 5790018
- 1885388 words of memory out of 5000000
- 39177 multiletter control sequences out of 15000+600000
+ 19067 strings out of 476025
+ 310134 string characters out of 5790018
+ 1880388 words of memory out of 5000000
+ 39180 multiletter control sequences out of 15000+600000
  525108 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 86i,8n,117p,444b,681s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 86i,8n,117p,356b,689s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><
 /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></u
@@ -767,10 +767,10 @@ ive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive
 023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/202
 3/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2023/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on apssamp.pdf (2 pages, 167730 bytes).
+Output written on apssamp.pdf (3 pages, 163689 bytes).
 PDF statistics:
- 214 PDF objects out of 1000 (max. 8388607)
- 181 compressed objects within 2 object streams
- 47 named destinations out of 1000 (max. 500000)
- 65 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 223 PDF objects out of 1000 (max. 8388607)
+ 189 compressed objects within 2 object streams
+ 49 named destinations out of 1000 (max. 500000)
+ 73 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -13,6 +13,7 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage[utf8]{inputenc}
+\usepackage{lipsum}
 \usepackage{listings}
 \usepackage{mathtools}
 \usepackage{mdframed}
@@ -56,8 +57,8 @@
 \def\andname{\hspace{-0.2em},}
 \allowdisplaybreaks
 
-\title{\textbf{PHYS 3142 HW1}}
-\author{HKUST, 2022-23 Spring}
+\title{\textbf{PHYS 1234 HW1}}
+\author{HKUST, 2022-23 Fall}
 \date{\vspace{-5ex}}
 
 \definecolor{codegreen}{rgb}{0,0.6,0}
@@ -66,41 +67,41 @@
 \definecolor{backcolour}{rgb}{0.95,0.95,0.9}
 
 \lstdefinestyle{mystyle}{
-  backgroundcolor=\color{backcolour}, commentstyle=\color{codegreen},
-  keywordstyle=\color{magenta},
-  numberstyle=\tiny\color{codegray},
-  stringstyle=\color{codepurple},
-  basicstyle=\ttfamily\footnotesize,
-  breakatwhitespace=false,         
-  breaklines=true,                 
-  captionpos=b,                    
-  keepspaces=true,                 
-  numbers=left,                    
-  numbersep=5pt,                  
-  showspaces=false,                
-  showstringspaces=false,
-  showtabs=false,                  
-  tabsize=2
+	backgroundcolor=\color{backcolour}, commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
 }
 \lstset{style=mystyle}
 \renewcommand{\lstlistingname}{Program}
 
 \begin{document}
-\counterwithin{lstlisting}{section}
-\maketitle
-
-\begin{center}
-\textbf{Student: Yue Cheuk Kan Kelvin}
-\hfill
-\textbf{Instructor: Prof. Liu} 
-\rule{16.5cm}{1pt}
-\end{center}
-
-\section*{Introduction}
-
-\section{Python}
-\begin{lstlisting}[language=Python, caption=Python]
-print('Hello world.')
-\end{lstlisting}
-
+	\counterwithin{lstlisting}{section}
+	\maketitle
+	
+	\begin{center}
+		\textbf{Student: Your name}
+		\hfill
+		\textbf{Instructor: Your Prof. name} 
+		\rule{16.5cm}{1pt}
+	\end{center}
+	
+	\section*{Introduction}
+	\lipsum[1]
+	\section{Python}
+	\begin{lstlisting}[language=Python, caption=Python]
+		print('Hello world.')
+	\end{lstlisting}
+	
 \end{document}
