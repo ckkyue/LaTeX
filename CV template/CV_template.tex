@@ -1,0 +1,116 @@
+\documentclass[11pt, a4paper]{moderncv}
+\moderncvstyle{banking}
+\definecolor{color0}{rgb}{0,0,0}% black
+\definecolor{color1}{rgb}{0.1,0.3,0.7}% light blue
+\definecolor{color2}{rgb}{0.45,0.45,0.45}% dark grey
+\nopagenumbers{}
+\usepackage[utf8]{inputenc}
+\usepackage{pdfpages}
+\usepackage{multicol}   
+\usepackage[scale=0.8,top=0.5in, bottom=0.5in]{geometry}
+\usepackage{xpatch}
+\xpatchcmd\cventry{,}{}{}{}
+
+\name{John}{Doe}
+\vspace*{3mm}
+\phone[mobile]{+852 1234 5678}
+\email{johndoe@example.hk}
+\homepage{www.linkedin.com/in/john-doe}
+\social[github]{johndoe}
+
+\begin{document}
+\vspace*{-1.05mm}
+\makecvtitle
+\vspace*{-10mm}
+
+\section{Education}
+\cventry{}{}{Hong Kong University of XYZ}{Sept, 2020 -- Now}{\hspace*{-2.5 mm} Bachelor of Science, Year 4}{Major in Physics}
+Major CGA: 3.700\\
+\textbf{Research interests}: Your research interests\\\\
+{Related Coursework:}
+\vspace{-1.0em}
+\begin{small}
+\begin{multicols}{2}
+\begin{itemize}
+\item Course 1
+\item Course 2
+\item Course 3
+\item Course 4
+\end{itemize}
+\end{multicols}
+\end{small}
+
+\cventry{}{}{ABC College}{Sept, 2014 -- June, 2020}{\hspace*{-2.5 mm} Hong Kong Diploma of Secondary Education (2020)}{You may include a list of subjects if you have achieved good grades, e.g. 5** in Mathematics}
+
+\section{Research Experience}
+\cventry{}{}{Undergraduate Research Opportunities Series 1 - Individual project}{July -- Aug, 2021\vspace{-1.0em}}{}{
+Supervisor: Your Prof. name\\
+Research topic: Your research topic
+\begin{small}
+\begin{itemize}
+\item What was the project about?
+\end{itemize}
+\end{small}}
+\vspace{1.0em}
+
+\section{Achievements and Awards}
+\cventry{}{}{University Scholarship}{Sept, 2020\vspace{-1.0em}}{}{
+\begin{itemize}
+\item Received for excellent HKDSE results at admission
+\end{itemize}}
+\cventry{}{}{University’s Scholarship Scheme for Continuing UG Students}{Sept, 2022\vspace{-1.0em}}{}{
+\begin{itemize}
+\item Received for satisfactory academic performance
+\end{itemize}}
+\cventry{}{}{Dean's List}{Sept, 2020 -- May, 2022\vspace{-1.0em}}{}{
+\begin{itemize}
+\item Received for satisfactory academic performance
+\end{itemize}}
+
+\section{Skills}
+\cventry{}{}{Computer skills}{\vspace{-1.0em}}{}{
+\begin{small}
+\begin{multicols}{3}
+\begin{itemize}
+\item Microsoft Office
+\item MATLAB
+\item \LaTeX
+\item Fortran
+\item Git/ GitHub
+\item Jupyter
+\item Python
+\item ImageJ
+\item Origin (Software)
+\end{itemize}
+\end{multicols}
+\end{small}}
+\vspace{1.0em}
+
+\cventry{}{}{Soft skills}{\vspace{-1.0em}}{}{
+\begin{small}
+\begin{multicols}{3}
+\begin{itemize}
+\item Collaboration
+\item Creativity
+\item Communication skills
+\item Data analytics
+\item Problem-solving
+\end{itemize}
+\end{multicols}
+\end{small}}
+\vspace{1.0em}
+
+Language: native proficiency in Chinese, professional working proficiency in English
+
+\section{Work Experience}
+\cventry{}{}{Company 1}{July -- Aug, 2022\vspace{-1.0em}}{}{
+\begin{itemize}
+\item What was the job about?
+\end{itemize}}
+
+\section{Extracurriculars}
+\cventry{}{}{XYZ Student's Society}{Feb, 2021 -- Feb, 2022\vspace{-1.0em}}{}{
+\begin{itemize}
+\item What were your responsibilities and contributions in this role?
+\end{itemize}}
+\end{document}
