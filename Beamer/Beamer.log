@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.1)  4 SEP 2023 14:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.1)  17 OCT 2023 16:56
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1219,10 +1219,10 @@ er.toc) [2
 ] [3
 
 ]
-<HK night view.jpg, id=109, 2890.8pt x 1626.075pt>
+<HK night view.jpg, id=116, 2890.8pt x 1626.075pt>
 File: HK night view.jpg Graphic file (type jpg)
 <use HK night view.jpg>
-Package pdftex.def Info: HK night view.jpg  used on input line 118.
+Package pdftex.def Info: HK night view.jpg  used on input line 119.
 (pdftex.def)             Requested size: 308.06367pt x 173.28613pt.
  [4
 
@@ -1238,23 +1238,23 @@ Package pdftex.def Info: HK night view.jpg  used on input line 118.
 
  (./Beamer.aux)
 Package rerunfilecheck Info: File `Beamer.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: 47949AC7C3DCEDDDEEFE3CD50587DDA1;103.
  ) 
 Here is how much of TeX's memory you used:
- 28603 strings out of 476025
- 556395 string characters out of 5790018
+ 28652 strings out of 476025
+ 557614 string characters out of 5790018
  1862388 words of memory out of 5000000
- 48490 multiletter control sequences out of 15000+600000
+ 48538 multiletter control sequences out of 15000+600000
  514404 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,15n,122p,408b,570s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,15n,122p,408b,633s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
 ></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb>
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb>
-Output written on Beamer.pdf (4 pages, 4025741 bytes).
+Output written on Beamer.pdf (4 pages, 4026525 bytes).
 PDF statistics:
- 154 PDF objects out of 1000 (max. 8388607)
- 126 compressed objects within 2 object streams
- 9 named destinations out of 1000 (max. 500000)
- 84 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 162 PDF objects out of 1000 (max. 8388607)
+ 133 compressed objects within 2 object streams
+ 10 named destinations out of 1000 (max. 500000)
+ 98 words of extra memory for PDF output out of 10000 (max. 10000000)
 
