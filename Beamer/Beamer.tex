@@ -1,7 +1,9 @@
-\documentclass{beamer}
-\usepackage[utf8]{inputenc}
+\documentclass[xcolor=dvipsnames]{beamer}
 \usetheme{Madrid}
-\usecolortheme{default}
+\useoutertheme{infolines}
+\useinnertheme{circles}
+\setbeamertemplate{navigation symbols}{}
+\usepackage[utf8]{inputenc}
 \usepackage[absolute,overlay]{textpos}
 \usepackage{amsmath,array}
 \usepackage{amsthm}
@@ -9,49 +11,62 @@
 \usepackage{bm}
 \setbeamertemplate{caption}[numbered]
 \usepackage{caption}
-\usepackage{chngcntr}
 \usepackage{color}
 \usepackage[force]{feynmp-auto} %<-added force
 \usepackage{float}
 \usepackage{graphicx}
 \usepackage{hyperref}
-\hypersetup{
-    colorlinks=true,        % colored links instead of boxes
-    linkcolor=blue,         % color of internal links
-    citecolor=blue,         % color of citation links
-    urlcolor=blue           % color of URLs
-}
+\usepackage{lipsum}
 \usepackage{listings}
-\definecolor{codegreen}{rgb}{0,0.6,0}
-\definecolor{codegray}{rgb}{0.5,0.5,0.5}
-\definecolor{codepurple}{rgb}{0.6,0,0.8}
-\definecolor{backcolour}{rgb}{0.95,0.95,0.9}
-\lstdefinestyle{mystyle}{
-  backgroundcolor=\color{backcolour}, commentstyle=\color{codegreen},
-  keywordstyle=\color{magenta},
-  numberstyle=\tiny\color{codegray},
-  stringstyle=\color{codepurple},
-  basicstyle=\ttfamily\footnotesize,
-  breakatwhitespace=false,         
-  breaklines=true,                 
-  captionpos=b,                    
-  keepspaces=true,                 
-  numbers=left,                    
-  numbersep=5pt,                  
-  showspaces=false,                
-  showstringspaces=false,
-  showtabs=false,                  
-  tabsize=2
-}
-\lstset{style=mystyle}
-\renewcommand{\lstlistingname}{Program}
 \usepackage{mathtools}
 \usepackage{mdframed}
 \usepackage[version=4]{mhchem}
 \usepackage{physics}
 \usepackage{setspace}
 \usepackage{subcaption}
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathreplacing} % For curly braces
 \usepackage{xcolor}
+
+% Set colours
+\definecolor{bgblue}{rgb}{0.05, 0.15, 0.3}
+\setbeamercolor{palette primary}{bg=bgblue,fg=white}
+\setbeamercolor{palette secondary}{bg=bgblue,fg=white}
+\setbeamercolor{palette tertiary}{bg=bgblue,fg=white}
+\setbeamercolor{palette quaternary}{bg=bgblue,fg=white}
+\setbeamercolor{structure}{fg=bgblue}
+\setbeamercolor{section in toc}{fg=bgblue}
+
+\hypersetup{
+    colorlinks=true, % coloured links instead of boxes
+    linkcolor=orange, % colour of internal links
+    citecolor=blue, % colour of citation links
+    urlcolor=blue % colour of URLs
+}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.6,0,0.8}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.9}
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour}, commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+\lstset{style=mystyle}
+\renewcommand{\lstlistingname}{Program}
 
 \renewcommand{\qed}{\hspace{1.2ex}\blacksquare}
 \renewcommand{\cite}[1]{\textbf{[\onlinecite{#1}]}}
@@ -91,25 +106,17 @@
   \end{textblock*}
 }
 
-\title{Validation of Theory Calculations with MCFM for W Mass Measurement}
-\author[Yue Cheuk Kan Kelvin]
-{Yue Cheuk Kan Kelvin\\[5mm]{Supervisor: David Walter and Pedro Silva}}
-\date{September 1, 2023}
+\title[Observation of Charge-Parity Symmetry Breaking in Baryon Decays]{\textbf{Observation of Charge-Parity Symmetry Breaking in Baryon Decays (LHCb collaboration, 2025)}}
+\date{April 24, 2025}
+\author[Kelvin YUE]{Kelvin YUE}
+\institute[]{Department of Physics, HKUST}
+
 \begin{document}
 \frame{\titlepage}
 
-\begin{frame}{Outline}
+% Overview frame with custom ToC
+\begin{frame}{Overview}
     \tableofcontents
-Report link: \href{http://cds.cern.ch/record/2868545}{http://cds.cern.ch/record/2868545}
-\end{frame}
-
-\begin{frame}
-\frametitle{1. Introduction}
-\begin{figure}[H]
-\centering
-\includegraphics[width=.9\linewidth]{HK night view}
-\captionof{figure}{Hong Kong night view\\{\tiny{Credit: Hong Kong}}}
-\end{figure}
 \end{frame}
 
 \end{document}
