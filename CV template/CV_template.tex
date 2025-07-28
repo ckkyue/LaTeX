@@ -1,116 +1,259 @@
-\documentclass[11pt, a4paper]{moderncv}
-\moderncvstyle{banking}
-\definecolor{color0}{rgb}{0,0,0}% black
-\definecolor{color1}{rgb}{0.1,0.3,0.7}% light blue
-\definecolor{color2}{rgb}{0.45,0.45,0.45}% dark grey
-\nopagenumbers{}
-\usepackage[utf8]{inputenc}
-\usepackage{pdfpages}
-\usepackage{multicol}   
-\usepackage[scale=0.8,top=0.5in, bottom=0.5in]{geometry}
-\usepackage{xpatch}
-\xpatchcmd\cventry{,}{}{}{}
+\documentclass[11pt, a4paper]{article}
+\usepackage{amsmath}
+\usepackage{calc}
+\usepackage{changepage}
+\usepackage[pscoord]{eso-pic}
+\usepackage{enumitem}
+\setlist[enumerate]{itemsep=0pt, topsep=0pt, partopsep=0pt, parsep=0pt}
+\setlist[itemize]{itemsep=0pt, topsep=0pt, partopsep=0pt, parsep=0pt}
+\usepackage{fontawesome5}
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm, footskip=1cm]{geometry}
+\usepackage[
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref}
+\usepackage{ifthen}
+\usepackage{iftex}
+\usepackage{lastpage}
+\usepackage{needspace}
+\usepackage{paracol}
+\usepackage{titlesec}
+\definecolor{primaryColor}{RGB}{0, 80, 145}
 
-\name{John}{Doe}
-\vspace*{3mm}
-\phone[mobile]{+852 1234 5678}
-\email{johndoe@example.hk}
-\homepage{www.linkedin.com/in/john-doe}
-\social[github]{johndoe}
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt}
+\pagestyle{empty}
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\topskip}{0pt}
+\setlength{\columnsep}{0cm}
+\makeatletter
+\let\ps@customFooterStyle\ps@plain
+\patchcmd{\ps@customFooterStyle}{\thepage}{
+    \color{gray}\textit{\small Your Name - Page \thepage{} of \pageref*{LastPage}}
+}{}{}
+\makeatother
+\pagestyle{customFooterStyle}
+
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+
+\titlespacing{\section}{-1pt}{0.3cm}{0.2cm}
+
+\newenvironment{onecolentry}{
+    \begin{adjustwidth}{0.2cm}{0.2cm}
+}{
+    \end{adjustwidth}
+}
+
+\newenvironment{twocolentry}[1]{
+    \onecolentry
+    \def\secondColumn{#1}
+    \setcolumnwidth{\fill, 4.5cm}
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+    \endonecolentry
+}
+
+\newenvironment{header}{
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.5}
+}{
+    \par\kern\topsep
+}
+
+\newcommand{\placelastupdatedtext}{
+  \AddToShipoutPictureFG*{
+    \put(
+        \LenToUnit{\paperwidth-2cm-0.2cm+0.05cm},
+        \LenToUnit{\paperheight-1cm}
+    ){\makebox[0pt][r]{
+        \small\color{gray}\textit{Last updated in [Month Year]}
+    }}
+  }
+}
+
+\let\hrefWithoutArrow\href
+
+\renewcommand\labelitemi{$\circ$}
+\renewcommand{\href}[2]{\hrefWithoutArrow{#1}{\ifthenelse{\equal{#2}{}}{ }{#2 }\raisebox{.15ex}{\footnotesize \faExternalLink*}}}
 
 \begin{document}
-\vspace*{-1.05mm}
-\makecvtitle
-\vspace*{-10mm}
+    \placelastupdatedtext
+    \begin{header}
+        \textbf{\fontsize{22pt}{22pt}\selectfont John Doe}
 
-\section{Education}
-\cventry{}{}{Hong Kong University of XYZ}{Sept, 2020 -- Now}{\hspace*{-2.5 mm} Bachelor of Science, Year 4}{Major in Physics}
-Major CGA: 3.700\\
-\textbf{Research interests}: Your research interests\\\\
-{Related Coursework:}
-\vspace{-1.0em}
-\begin{small}
-\begin{multicols}{2}
-\begin{itemize}
-\item Course 1
-\item Course 2
-\item Course 3
-\item Course 4
-\end{itemize}
-\end{multicols}
-\end{small}
+        \vspace{0.3cm}
 
-\cventry{}{}{ABC College}{Sept, 2014 -- June, 2020}{\hspace*{-2.5 mm} Hong Kong Diploma of Secondary Education (2020)}{You may include a list of subjects if you have achieved good grades, e.g. 5** in Mathematics}
+        \normalsize
+        \mbox{{\color{black}\footnotesize\faMapMarker*}\hspace*{0.13cm}Your Location}
+        \hspace{0.5cm}
+        \mbox{\hrefWithoutArrow{mailto:johndoe@example.com}{\color{black}{\footnotesize\faEnvelope[regular]}\hspace*{0.13cm}johndoe@example.com}}
+        \hspace{0.5cm}
+        \mbox{\hrefWithoutArrow{tel:+852 1234 5678}{\color{black}{\footnotesize\faPhone*}\hspace*{0.13cm}+852 1234 5678}}
+        \hspace{0.5cm}
+        \mbox{\hrefWithoutArrow{https://www.linkedin.com/in/john-doe/}{\color{black}{\footnotesize\faLinkedinIn}\hspace*{0.13cm}john-doe}}
+        \hspace{0.5cm}
+        \mbox{\hrefWithoutArrow{https://github.com/johndoe}{\color{black}{\footnotesize\faGithub}\hspace*{0.13cm}johndoe}}
+    \end{header}
+    
+    \section{Education}
 
-\section{Research Experience}
-\cventry{}{}{Undergraduate Research Opportunities Series 1 - Individual project}{July -- Aug, 2021\vspace{-1.0em}}{}{
-Supervisor: Your Prof. name\\
-Research topic: Your research topic
-\begin{small}
-\begin{itemize}
-\item What was the project about?
-\end{itemize}
-\end{small}}
-\vspace{1.0em}
+    \begin{twocolentry}{
+        \textit{Start Date -- End Date (Expected)}
+    }
+        \textbf{Your University Name}
 
-\section{Achievements and Awards}
-\cventry{}{}{University Scholarship}{Sept, 2020\vspace{-1.0em}}{}{
-\begin{itemize}
-\item Received for excellent HKDSE results at admission
-\end{itemize}}
-\cventry{}{}{University’s Scholarship Scheme for Continuing UG Students}{Sept, 2022\vspace{-1.0em}}{}{
-\begin{itemize}
-\item Received for satisfactory academic performance
-\end{itemize}}
-\cventry{}{}{Dean's List}{Sept, 2020 -- May, 2022\vspace{-1.0em}}{}{
-\begin{itemize}
-\item Received for satisfactory academic performance
-\end{itemize}}
+        \textit{Your Degree, Year X}
+    \end{twocolentry}
 
-\section{Skills}
-\cventry{}{}{Computer skills}{\vspace{-1.0em}}{}{
-\begin{small}
-\begin{multicols}{3}
-\begin{itemize}
-\item Microsoft Office
-\item MATLAB
-\item \LaTeX
-\item Fortran
-\item Git/ GitHub
-\item Jupyter
-\item Python
-\item ImageJ
-\item Origin (Software)
-\end{itemize}
-\end{multicols}
-\end{small}}
-\vspace{1.0em}
+    \begin{onecolentry}
+    \begin{small}
+        \begin{itemize}
+            \item \textbf{Research Interests:} Your research interests
+            \item Overall GPA: X.XXX
+        \end{itemize}
+    \end{small}
+    \end{onecolentry}
+    
+    \vspace{0.5em}
 
-\cventry{}{}{Soft skills}{\vspace{-1.0em}}{}{
-\begin{small}
-\begin{multicols}{3}
-\begin{itemize}
-\item Collaboration
-\item Creativity
-\item Communication skills
-\item Data analytics
-\item Problem-solving
-\end{itemize}
-\end{multicols}
-\end{small}}
-\vspace{1.0em}
+    \begin{twocolentry}{
+        \textit{Start Date -- End Date}
+    }
+        \textit{Your Previous Degree, Honors}
+    \end{twocolentry}
 
-Language: native proficiency in Chinese, professional working proficiency in English
+    \begin{onecolentry}
+    \begin{small}
+        \begin{itemize}
+            \item Major in [Field], Minor in [Field]
+            \item Overall GPA: X.XXX, Major GPA: X.XXX
+        \end{itemize}
+    \end{small}
+    \end{onecolentry}
+    
+    \vspace{0.5em}
+    
+    \begin{twocolentry}{
+        \textit{Start Date -- End Date}
+    }
+        \textbf{Your High School Name}
 
-\section{Work Experience}
-\cventry{}{}{Company 1}{July -- Aug, 2022\vspace{-1.0em}}{}{
-\begin{itemize}
-\item What was the job about?
-\end{itemize}}
+        \textit{Your Diploma (Year)}
+    \end{twocolentry}
+    \begin{onecolentry}
+    \begin{small}
+        \begin{itemize}
+            \item High grades in [Subjects]
+        \end{itemize}
+    \end{small}
+    \end{onecolentry}
 
-\section{Extracurriculars}
-\cventry{}{}{XYZ Student's Society}{Feb, 2021 -- Feb, 2022\vspace{-1.0em}}{}{
-\begin{itemize}
-\item What were your responsibilities and contributions in this role?
-\end{itemize}}
+    \section{Publications}
+    \begin{enumerate}
+        \item ``Your Publication Title''\\
+        Author1, Author2, \textbf{Your Name}, Author3.\\ DOI: \href{https://doi.org/your-doi}{Your DOI}, arXiv: \href{https://arxiv.org/abs/your-arxiv}{Your arXiv ID [field] (Year)}
+    \end{enumerate}
+
+    \section{Research Experience}
+    \begin{twocolentry}{
+        \textit{Start Date -- End Date}
+    }   
+        \textbf{Your Research Project Title}
+    \end{twocolentry}
+    
+    \begin{onecolentry}
+        \begin{small}
+            Supervisor: Prof. Your Supervisor (Department, University)
+            
+            Research Topic: Your Research Topic    
+            \begin{itemize}
+                \item Your achievement 1
+                \item Your achievement 2
+            \end{itemize}
+            Code: \href{https://github.com/your-repo}{https://github.com/your-repo}
+        \end{small}
+    \end{onecolentry}
+
+    \section{Teaching Experience}
+    
+    \begin{twocolentry}{
+        \textit{Start Date -- End Date}
+    }
+        \textbf{Teaching Assistant, Course Code: Course Name}
+    \end{twocolentry}
+    
+    \begin{onecolentry}
+        \begin{small}
+            Instructor: Dr. Your Instructor (Department, University)
+            
+            \begin{itemize}
+                \item Your responsibility 1
+                \item Your responsibility 2
+            \end{itemize}
+        \end{small}
+    \end{onecolentry}
+
+    \section{Achievements and Awards}
+    \begin{twocolentry}{
+        \textit{[Date]}
+    }
+        \textbf{Your Award Name}
+    \end{twocolentry}
+
+    \begin{onecolentry}
+        \begin{small}
+            \begin{itemize}
+                \item Criteria or description
+            \end{itemize}
+        \end{small}
+    \end{onecolentry}
+
+    \section{Independent Projects}
+    \begin{twocolentry}{
+        \textit{Start Date -- Present}
+    }
+        \textbf{Your Project Name}
+    \end{twocolentry}
+
+    \begin{onecolentry}
+        \begin{small}
+            \begin{itemize}
+                \item Your description 1
+                \item Your description 2
+            \end{itemize}
+            Code: \href{https://github.com/your-repo}{https://github.com/your-repo}
+        \end{small}
+    \end{onecolentry}
+
+    \section{Computer Skills}
+    Programming: Python (pandas, NumPy, matplotlib, SciPy), MATLAB, Fortran\\
+    Tools: \LaTeX, Mathematica, Jupyter, Git/GitHub, Microsoft Office, ImageJ, Origin
+
+    \section{Languages}
+    Your Native Language (Native proficiency), English (Professional working proficiency)
+
+    \section{Service and Extracurricular Activities}
+    
+    \begin{twocolentry}{
+        \textit{[Date]}
+    }
+        \textbf{Your Role in Event}
+    \end{twocolentry}
+    
+    \begin{onecolentry}
+        \begin{small}
+            \begin{itemize}
+                \item Your responsibility
+            \end{itemize}
+        \end{small}
+    \end{onecolentry}
+
 \end{document}
